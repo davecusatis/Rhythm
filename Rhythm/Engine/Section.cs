@@ -5,10 +5,18 @@ using System.Text;
 
 namespace Rhythm.Engine
 {
+    /// <summary>
+    /// Section of charts. Each section is defined by a set of notes at constant BPM.
+    /// </summary>
     class Section
     {
-        private String name;
+        public String name;
         private int[] notes;
-        private int BeatsPerMin;
+        public int BPM;
+
+        public void setNotes(int[] n)
+        {
+            notes = n;
+        }
     }
 }
